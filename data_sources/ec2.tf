@@ -1,8 +1,8 @@
 resource "aws_instance" "roboshop" {
-  ami           = "ami-09c813fb71547fc4f"
+  ami           = data.aws_ami.joindevops.id # i ll get the ami id from data.tf file, check it for more details
   instance_type = "t3.micro"
   # here, in sequrity group, it ll take downside inbound and outbound , id's and creates them.
-  vpc_security_group_ids = local.sg_id
+  vpc_security_group_ids = [ aws_security_group.allow-all.id]
 
   tags = {
     Name = "HelloWorld"
