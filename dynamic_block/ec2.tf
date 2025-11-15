@@ -1,0 +1,51 @@
+resource "aws_instance" "roboshop" {
+
+  # the belows, which is dependent on var, its created in varaibles folder
+  ami = var.ami_id # left side, its terraform syntax, right side our istam
+  /*   # by usung count based loops, we can give how many number of instances can be created
+  for_each = var.instances */
+
+  #the below one is coverting the list to set, and giving the info
+  for_each      = toset(var.instances)
+  instance_type = "t3.micro"
+  # here, in sequrity group, it ll take downside inbound and outbound , id's and creates them.
+  vpc_security_group_ids = [aws_security_group.allow-all.id]
+
+  # tags is the name of the instances
+
+  tags = {
+    Name = each.key # here, for_each top we have written, so each.key ll come from that
+  }
+}
+
+# sequrity group and inpbound and out bound rules infra creation
+resource "aws_security_group" "allow-all" {
+
+  name        = var.sg_name
+  description = var.sg_description
+
+  # dynamic block understand properly, if you want to open specific ports for incomming traffic and outgoing traffic, if we want to open 20 -30 ports, this code is repetitive, if we loop it the number of lines of code ll decrease, with same or good efficiency, for this we have dynamic block in terraform
+  dynamic "ingress" {
+    for_each = var.ingress_ports
+    content {
+
+      from_port        = ingress.value["from_port"]
+      to_port          = ingress.value["to_port"]
+      protocol         = "-1"
+      cidr_blocks      = var.cidr_blocks
+      ipv6_cidr_blocks = ["::/0"]
+    }
+  }
+
+
+  egress {
+
+    from_port        = var.from_port
+    to_port          = var.to_port
+    protocol         = "-1"
+    cidr_blocks      = var.cidr_blocks
+    ipv6_cidr_blocks = ["::/0"]
+  }
+
+  tags = var.sg_tags
+}
