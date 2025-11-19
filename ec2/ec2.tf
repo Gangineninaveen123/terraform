@@ -6,7 +6,7 @@ resource "aws_instance" "roboshop" {
 
   tags = {
     Name = "HelloWorld"
-  }
+  } 
 }
 
 # sequrity group and inpbound and out bound rules infra creation
