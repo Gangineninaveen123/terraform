@@ -14,7 +14,7 @@ resource "aws_instance" "roboshop" {
   # tags is the name of the instances
 
   tags = {
-    Name = each.key # here, for_each top we have written, so each.key ll come from that
+    Name = each.key # [instance name]here, for_each top we have written, so each.key ll come from that
   }
 }
 

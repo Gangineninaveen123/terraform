@@ -3,7 +3,7 @@ resource "aws_instance" "roboshop" {
   ami           = var.ami_id  # left side, its terraform syntax, right side our istam
   instance_type = var.instance_type
   # here, in sequrity group, it ll take downside inbound and outbound , id's and creates them.
-  vpc_security_group_ids = [ aws_security_group.allow-all.id]
+  vpc_security_group_ids = [ aws_security_group.allow-all.id ]
 
   tags = var.ec2_tags
 }

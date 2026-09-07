@@ -13,10 +13,10 @@ terraform {
 
 # right now, we are not using the dynamo db, as we are locing the state file in s3 native only, by adding [encrypt        = true, and use_lockfile   = true # Enable S3 native state locking], its simple, no need to dynamodb table creation.
   backend "s3" {   # here backend menas -> state or state file, we can consider , for better understanding
-    bucket = "remote-state-files-terraform-murruga" # created bucket name
-    key    = "remote-state-demo" # our wish
+    bucket = "84s-remote-state-files-terraform-karthikeya" # created bucket name or folder name, we can consider
+    key    = "remote-state-demo" # our wish , actual state file
     region = "us-east-1"
-    dynamodb_table = "remote-state-file-karthikeya" # this is no use now, as we are doing locking in native in s3 buckets only, by [encrypt        = true and use_lockfile   = true]
+    #dynamodb_table = "remote-state-file-karthikeya" # this is no use now, as we are doing locking in native in s3 buckets only, by [encrypt        = true and use_lockfile   = true]
     encrypt        = true
     use_lockfile   = true # Enable S3 native state locking
 }

@@ -3,7 +3,7 @@
 #ami id
 variable "ami_id" {
   type        = string #not mandatory
-  default     = "ami-09c813fb71547fc4f"
+  default     = "ami-0220d79f3f480ecf5"
   description = "ami_id of join devops RHEL9" # not mandatory
 
 }

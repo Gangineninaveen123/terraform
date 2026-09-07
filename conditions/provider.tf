@@ -1,3 +1,4 @@
+#this means, aws provider
 terraform {
   required_providers {
     aws = {
@@ -7,6 +8,7 @@ terraform {
   }
 }
 
+#this means, aws authentication
 provider "aws" {
   # Configuration options
 }

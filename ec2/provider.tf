@@ -1,3 +1,4 @@
+#AWS Provider in terraform, -> give in google like this
 terraform {
   required_providers {
     aws = {

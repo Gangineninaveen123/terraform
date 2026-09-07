@@ -3,7 +3,8 @@ resource "aws_instance" "roboshop" {
   # the belows, which is dependent on var, its created in varaibles folder
   ami           = var.ami_id  # left side, its terraform syntax, right side our istam
 /*   # by usung count based loops, we can give how many number of instances can be created
-  for_each = var.instances */
+  for_each = var.instances # if we want different instance_type for different inastance names, this is the one.[check in variables]
+  instance_type = each.value */ 
 
   #the below one is coverting the list to set, and giving the info
   for_each = toset(var.instances)

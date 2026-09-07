@@ -5,6 +5,7 @@ resource "aws_instance" "roboshop" {
   # here, in sequrity group, it ll take downside inbound and outbound , id's and creates them.
   vpc_security_group_ids = [ aws_security_group.allow-all.id]
 
+# [local-exec] -> means, after creating server, we ll run the teraform commands
   # after creating instance, this command ll run [***local-exec****]
   # we can write, n number of provisoners, one after one, for which, commands we want , or if we need
   provisioner "local-exec" {
@@ -27,6 +28,7 @@ resource "aws_instance" "roboshop" {
     host     = self.public_ip # from laptop, we are connecting to server, its public ip
   }
 
+## [remote-exec] -> means, after creating server, we ll run the teraform commands on created servers.....ex:- ec2
 #now what to do, after connecting to server with public ip adress with [remote-exec]
 # note -> its in creation time
   provisioner "remote-exec" {
@@ -39,7 +41,7 @@ resource "aws_instance" "roboshop" {
 
   # at destroy time
   provisioner "remote-exec" {
-    # always remember before destoring any server, we ned to stop the services, if we are not stooping means, users ll get get different type of errors....
+    # always remember before destoring any server, we need to stop the services, if we are not stooping means, users ll get get different type of errors....
     when = destroy
     inline = [
         "sudo systemctl stop nginx",
