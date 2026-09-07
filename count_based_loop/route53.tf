@@ -3,8 +3,9 @@ resource "aws_route53_record" "www" {
   zone_id = var.zone_id
   count = 4 # this is loop related, creating 4 instances
   # the below is callled as interpolation[the combination of string and any other variable called as interpolation] - ["${var.instances[count.index]}.${var.domain_name}"]
-  name    = "${var.instances[count.index]}.${var.domain_name}" # [mongodb.muruga.site], we need, and instance name ll get through varables ex:-
+  name    = "${var.instances[count.index]}.${var.domain_name}" # [mongodb.karthikeya.site], we need, and instance name ll get through varables ex:-
   type    = "A"
   ttl     = 1
   records = [aws_instance.roboshop[count.index].private_ip] # from output, i ll get the instance name, in zero index, i ll get that ip address
+  allow_overwrite = true  # Add this line to force overwrite existing records
 }

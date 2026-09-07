@@ -67,9 +67,9 @@ variable "instances"{
 }
 
 variable "zone_id"{
-    default = "Z0446603M577BRUXUXUJ"
+    default = "Z09000942IQE9E07VWWVE"
 }
 
 variable "domain_name" {
-    default = "muruga.site"
+    default = "karthikeya.site"
 }

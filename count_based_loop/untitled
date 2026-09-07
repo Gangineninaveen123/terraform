@@ -1,9 +1,9 @@
-[
+ec2_instance_info = [
   {
-    "ami" = "ami-09c813fb71547fc4f"
-    "arn" = "arn:aws:ec2:us-east-1:227896186429:instance/i-0c0804568b1edca78"
+    "ami" = "ami-0220d79f3f480ecf5"
+    "arn" = "arn:aws:ec2:us-east-1:227896186429:instance/i-06620fd74d0628a54"
     "associate_public_ip_address" = true
-    "availability_zone" = "us-east-1f"
+    "availability_zone" = "us-east-1a"
     "capacity_reservation_specification" = tolist([
       {
         "capacity_reservation_preference" = "open"
@@ -39,7 +39,7 @@
     "host_id" = ""
     "host_resource_group_arn" = tostring(null)
     "iam_instance_profile" = ""
-    "id" = "i-0c0804568b1edca78"
+    "id" = "i-06620fd74d0628a54"
     "instance_initiated_shutdown_behavior" = "stop"
     "instance_lifecycle" = ""
     "instance_market_options" = tolist([])
@@ -73,11 +73,11 @@
     "primary_network_interface" = tolist([
       {
         "delete_on_termination" = true
-        "network_interface_id" = "eni-0016e644c033e7600"
+        "network_interface_id" = "eni-0dde5506b51db36eb"
       },
     ])
-    "primary_network_interface_id" = "eni-0016e644c033e7600"
-    "private_dns" = "ip-172-31-76-255.ec2.internal"
+    "primary_network_interface_id" = "eni-0dde5506b51db36eb"
+    "private_dns" = "ip-172-31-17-189.ec2.internal"
     "private_dns_name_options" = tolist([
       {
         "enable_resource_name_dns_a_record" = false
@@ -85,9 +85,9 @@
         "hostname_type" = "ip-name"
       },
     ])
-    "private_ip" = "172.31.76.255"
-    "public_dns" = "ec2-44-192-30-177.compute-1.amazonaws.com"
-    "public_ip" = "44.192.30.177"
+    "private_ip" = "172.31.17.189"
+    "public_dns" = "ec2-54-234-18-161.compute-1.amazonaws.com"
+    "public_ip" = "54.234.18.161"
     "region" = "us-east-1"
     "root_block_device" = tolist([
       {
@@ -99,7 +99,7 @@
         "tags" = tomap({})
         "tags_all" = tomap({})
         "throughput" = 125
-        "volume_id" = "vol-091c0c0cf4ae42929"
+        "volume_id" = "vol-05047a9a683e491a8"
         "volume_size" = 20
         "volume_type" = "gp3"
       },
@@ -110,7 +110,7 @@
     ])
     "source_dest_check" = true
     "spot_instance_request_id" = ""
-    "subnet_id" = "subnet-0e50336531f82fa24"
+    "subnet_id" = "subnet-0a8777752f9125a3e"
     "tags" = tomap({
       "Name" = "mongodb"
     })
@@ -124,14 +124,14 @@
     "user_data_replace_on_change" = false
     "volume_tags" = tomap(null) /* of string */
     "vpc_security_group_ids" = toset([
-      "sg-0b2b86c55c4f40a9e",
+      "sg-05845b611b65fbfaa",
     ])
   },
   {
-    "ami" = "ami-09c813fb71547fc4f"
-    "arn" = "arn:aws:ec2:us-east-1:227896186429:instance/i-0a25aae5db36b6d03"
+    "ami" = "ami-0220d79f3f480ecf5"
+    "arn" = "arn:aws:ec2:us-east-1:227896186429:instance/i-002c2510125dbfe2d"
     "associate_public_ip_address" = true
-    "availability_zone" = "us-east-1f"
+    "availability_zone" = "us-east-1a"
     "capacity_reservation_specification" = tolist([
       {
         "capacity_reservation_preference" = "open"
@@ -167,7 +167,7 @@
     "host_id" = ""
     "host_resource_group_arn" = tostring(null)
     "iam_instance_profile" = ""
-    "id" = "i-0a25aae5db36b6d03"
+    "id" = "i-002c2510125dbfe2d"
     "instance_initiated_shutdown_behavior" = "stop"
     "instance_lifecycle" = ""
     "instance_market_options" = tolist([])
@@ -201,11 +201,11 @@
     "primary_network_interface" = tolist([
       {
         "delete_on_termination" = true
-        "network_interface_id" = "eni-0d7870fdce7330734"
+        "network_interface_id" = "eni-002619c704c1c5f47"
       },
     ])
-    "primary_network_interface_id" = "eni-0d7870fdce7330734"
-    "private_dns" = "ip-172-31-70-188.ec2.internal"
+    "primary_network_interface_id" = "eni-002619c704c1c5f47"
+    "private_dns" = "ip-172-31-17-37.ec2.internal"
     "private_dns_name_options" = tolist([
       {
         "enable_resource_name_dns_a_record" = false
@@ -213,9 +213,9 @@
         "hostname_type" = "ip-name"
       },
     ])
-    "private_ip" = "172.31.70.188"
-    "public_dns" = "ec2-3-236-69-153.compute-1.amazonaws.com"
-    "public_ip" = "3.236.69.153"
+    "private_ip" = "172.31.17.37"
+    "public_dns" = "ec2-100-54-238-106.compute-1.amazonaws.com"
+    "public_ip" = "100.54.238.106"
     "region" = "us-east-1"
     "root_block_device" = tolist([
       {
@@ -227,7 +227,7 @@
         "tags" = tomap({})
         "tags_all" = tomap({})
         "throughput" = 125
-        "volume_id" = "vol-02bca889434a7ce67"
+        "volume_id" = "vol-08bfcc9f5188e658b"
         "volume_size" = 20
         "volume_type" = "gp3"
       },
@@ -238,7 +238,7 @@
     ])
     "source_dest_check" = true
     "spot_instance_request_id" = ""
-    "subnet_id" = "subnet-0e50336531f82fa24"
+    "subnet_id" = "subnet-0a8777752f9125a3e"
     "tags" = tomap({
       "Name" = "redis"
     })
@@ -252,14 +252,14 @@
     "user_data_replace_on_change" = false
     "volume_tags" = tomap(null) /* of string */
     "vpc_security_group_ids" = toset([
-      "sg-0b2b86c55c4f40a9e",
+      "sg-05845b611b65fbfaa",
     ])
   },
   {
-    "ami" = "ami-09c813fb71547fc4f"
-    "arn" = "arn:aws:ec2:us-east-1:227896186429:instance/i-0313b9f7c44d81c4c"
+    "ami" = "ami-0220d79f3f480ecf5"
+    "arn" = "arn:aws:ec2:us-east-1:227896186429:instance/i-043ef13d2f2f7c484"
     "associate_public_ip_address" = true
-    "availability_zone" = "us-east-1f"
+    "availability_zone" = "us-east-1a"
     "capacity_reservation_specification" = tolist([
       {
         "capacity_reservation_preference" = "open"
@@ -295,7 +295,7 @@
     "host_id" = ""
     "host_resource_group_arn" = tostring(null)
     "iam_instance_profile" = ""
-    "id" = "i-0313b9f7c44d81c4c"
+    "id" = "i-043ef13d2f2f7c484"
     "instance_initiated_shutdown_behavior" = "stop"
     "instance_lifecycle" = ""
     "instance_market_options" = tolist([])
@@ -329,11 +329,11 @@
     "primary_network_interface" = tolist([
       {
         "delete_on_termination" = true
-        "network_interface_id" = "eni-098ae4332b731a981"
+        "network_interface_id" = "eni-0ce81a772ef4ced42"
       },
     ])
-    "primary_network_interface_id" = "eni-098ae4332b731a981"
-    "private_dns" = "ip-172-31-69-178.ec2.internal"
+    "primary_network_interface_id" = "eni-0ce81a772ef4ced42"
+    "private_dns" = "ip-172-31-17-25.ec2.internal"
     "private_dns_name_options" = tolist([
       {
         "enable_resource_name_dns_a_record" = false
@@ -341,9 +341,9 @@
         "hostname_type" = "ip-name"
       },
     ])
-    "private_ip" = "172.31.69.178"
-    "public_dns" = "ec2-98-93-76-119.compute-1.amazonaws.com"
-    "public_ip" = "98.93.76.119"
+    "private_ip" = "172.31.17.25"
+    "public_dns" = "ec2-100-62-104-155.compute-1.amazonaws.com"
+    "public_ip" = "100.62.104.155"
     "region" = "us-east-1"
     "root_block_device" = tolist([
       {
@@ -355,7 +355,7 @@
         "tags" = tomap({})
         "tags_all" = tomap({})
         "throughput" = 125
-        "volume_id" = "vol-0b698108c4f63d949"
+        "volume_id" = "vol-066030be61eabeadb"
         "volume_size" = 20
         "volume_type" = "gp3"
       },
@@ -366,7 +366,7 @@
     ])
     "source_dest_check" = true
     "spot_instance_request_id" = ""
-    "subnet_id" = "subnet-0e50336531f82fa24"
+    "subnet_id" = "subnet-0a8777752f9125a3e"
     "tags" = tomap({
       "Name" = "mysql"
     })
@@ -380,14 +380,14 @@
     "user_data_replace_on_change" = false
     "volume_tags" = tomap(null) /* of string */
     "vpc_security_group_ids" = toset([
-      "sg-0b2b86c55c4f40a9e",
+      "sg-05845b611b65fbfaa",
     ])
   },
   {
-    "ami" = "ami-09c813fb71547fc4f"
-    "arn" = "arn:aws:ec2:us-east-1:227896186429:instance/i-0ffb3d53fa0b73ad2"
+    "ami" = "ami-0220d79f3f480ecf5"
+    "arn" = "arn:aws:ec2:us-east-1:227896186429:instance/i-0e591c68f0ad39a99"
     "associate_public_ip_address" = true
-    "availability_zone" = "us-east-1f"
+    "availability_zone" = "us-east-1a"
     "capacity_reservation_specification" = tolist([
       {
         "capacity_reservation_preference" = "open"
@@ -423,7 +423,7 @@
     "host_id" = ""
     "host_resource_group_arn" = tostring(null)
     "iam_instance_profile" = ""
-    "id" = "i-0ffb3d53fa0b73ad2"
+    "id" = "i-0e591c68f0ad39a99"
     "instance_initiated_shutdown_behavior" = "stop"
     "instance_lifecycle" = ""
     "instance_market_options" = tolist([])
@@ -457,11 +457,11 @@
     "primary_network_interface" = tolist([
       {
         "delete_on_termination" = true
-        "network_interface_id" = "eni-04e6fd8aa1db8360d"
+        "network_interface_id" = "eni-0a508ef1e10803d18"
       },
     ])
-    "primary_network_interface_id" = "eni-04e6fd8aa1db8360d"
-    "private_dns" = "ip-172-31-72-130.ec2.internal"
+    "primary_network_interface_id" = "eni-0a508ef1e10803d18"
+    "private_dns" = "ip-172-31-17-177.ec2.internal"
     "private_dns_name_options" = tolist([
       {
         "enable_resource_name_dns_a_record" = false
@@ -469,9 +469,9 @@
         "hostname_type" = "ip-name"
       },
     ])
-    "private_ip" = "172.31.72.130"
-    "public_dns" = "ec2-34-204-173-69.compute-1.amazonaws.com"
-    "public_ip" = "34.204.173.69"
+    "private_ip" = "172.31.17.177"
+    "public_dns" = "ec2-3-95-212-96.compute-1.amazonaws.com"
+    "public_ip" = "3.95.212.96"
     "region" = "us-east-1"
     "root_block_device" = tolist([
       {
@@ -483,7 +483,7 @@
         "tags" = tomap({})
         "tags_all" = tomap({})
         "throughput" = 125
-        "volume_id" = "vol-0b37c656631564852"
+        "volume_id" = "vol-0e62a1639038cd73e"
         "volume_size" = 20
         "volume_type" = "gp3"
       },
@@ -494,7 +494,7 @@
     ])
     "source_dest_check" = true
     "spot_instance_request_id" = ""
-    "subnet_id" = "subnet-0e50336531f82fa24"
+    "subnet_id" = "subnet-0a8777752f9125a3e"
     "tags" = tomap({
       "Name" = "rabbitmq"
     })
@@ -508,7 +508,8 @@
     "user_data_replace_on_change" = false
     "volume_tags" = tomap(null) /* of string */
     "vpc_security_group_ids" = toset([
-      "sg-0b2b86c55c4f40a9e",
+      "sg-05845b611b65fbfaa",
     ])
   },
 ]
+
