@@ -6,4 +6,5 @@ resource "aws_route53_record" "www" {
   type    = "A"
   ttl     = 1
   records = [aws_instance.roboshop[count.index].private_ip] # from output, i ll get the instance name, in zero index, i ll get that ip address
+  allow_overwrite = true  # Add this line to force overwrite existing records
 }
