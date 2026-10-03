@@ -5,7 +5,7 @@ resource "aws_instance" "roboshop" {
   # here, in sequrity group, it ll take downside inbound and outbound , id's and creates them.
   vpc_security_group_ids = [ aws_security_group.allow-all.id]
 
-# [local-exec] -> means, after creating server, we ll run the teraform commands
+# [local-exec] -> means, after creating server, we ll run the teraform commands in local machine
   # after creating instance, this command ll run [***local-exec****]
   # we can write, n number of provisoners, one after one, for which, commands we want , or if we need
   provisioner "local-exec" {
