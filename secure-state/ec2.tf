@@ -12,7 +12,7 @@ resource "aws_instance" "roboshop" {
 # sequrity group and inpbound and out bound rules infra creation
 resource "aws_security_group" "allow-all" {
 
-    name        = "allow_all_immutable1"
+    name        = "allow_all_immutable2"
     description = "allow all traffic"
 
     ingress {
